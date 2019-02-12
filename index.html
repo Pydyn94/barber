@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Barber_Shop</title>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Monoton|Pacifico" rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <nav class="navigation">
+        <ul>
+            <li><a href="#">About</a>
+                <ul>
+                    <li><a href="#about">Information</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+            </li>
+            <li><a href="#table-cost">Cost</a></li>
+            <li><a href="#">Contact</a>
+                <ul>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#social-media">Social-Media</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Barber-Shop</h1>
+    </header>
+
+    <main class="container">
+        <section id="about">
+            <h2>About</h2>
+            <div class="img">
+                <img src="https://www.brandcrowd.com/gallery/brands/pictures/picture14364503256665.jpg" alt="Barber_Shop" title="barber-pic">
+            </div>
+            <article class="text-about">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </article>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <img src="https://i.etsystatic.com/13221305/r/il/6a7333/1224713956/il_570xN.1224713956_dwvy.jpg" alt="pic-1">
+            <img src="https://images.pexels.com/photos/1570807/pexels-photo-1570807.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="pic-2">
+            <img src="https://images.pexels.com/photos/897271/pexels-photo-897271.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="pic-3">
+            <img src="https://images.pexels.com/photos/446596/pexels-photo-446596.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="pic-4">
+            <img src="https://images.pexels.com/photos/995300/pexels-photo-995300.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="pic-5">
+            <img src="https://i.etsystatic.com/13221305/r/il/849409/1224713016/il_570xN.1224713016_gdje.jpg" alt="pic-6">
+            <img src="https://i.etsystatic.com/13221305/r/il/bbaf10/1505934220/il_570xN.1505934220_ilh5.jpg" alt="pic-7">
+            <img src="https://img.freepik.com/free-vector/barber-pole-logo_1415-692.jpg?size=338&ext=jpg" alt="pic-8">
+
+        </section>
+        <section id="table-cost">
+            <h2>Cost</h2>
+            <table>
+                <tr class="column-title">
+                    <td colspan="2">Barber</td>
+                    <td colspan="2">Fryzjer</td>
+                </tr>
+                <tr class="column-title">
+                    <td>Usługa</td>
+                    <td>Cena</td>
+                    <td>Usługa</td>
+                    <td>Cena</td>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td class="t1">Golenie twarzy brzytwą</td>
+                        <td>80PLN</td>
+                        <td class="t1">Strzyżenie włosów</td>
+                        <td>60PLN</td>
+                    </tr>
+                    <tr>
+                        <td class="t1">Trymowanie brody</td>
+                        <td>50PLN</td>
+                        <td class="t1">Strzyżenie maszynką na jedną długość</td>
+                        <td>40PLN</td>
+                    </tr>
+                    <tr>
+                        <td class="t1">Trymowanie brody + brzytwa</td>
+                        <td>75PLN</td>
+                        <td class="t1">Strzyżenie maszynką</td>
+                        <td>45PLN</td>
+                    </tr>
+                    <tr>
+                        <td class="t1">Trymowanie brody + strzyżenie</td>
+                        <td>120PLN</td>
+                        <td class="t1">Pielęgnacja włosów</td>
+                        <td>65PLN</td>
+                    </tr>
+                    <tr>
+                        <td class="t1">Odsiwianie brody</td>
+                        <td>35PLN</td>
+                        <td class="t1">Odsiwianie włosów</td>
+                        <td>45PLN</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form>
+                <label for="name"></label>
+                <input id="name" type="text" name="imie-i-nazwisko" required placeholder="Imię i nazwisko">
+                <label for="tel"></label>
+                <input id="tel" type="tel" name="telefon" required placeholder="Numer telefonu">
+                <label for="mail"></label>
+                <input id="mail" type="email" name="email" required placeholder="E-mail ">
+                <label for="package"></label>
+                <select id="package" name="package">
+			        <option value="brak">-------------------------</option>
+			        <option value="Barber">Barber</option>
+			        <option value="Fryzjer">Fryzjer</option>
+			        <option value="Barber+Fryzjer">Barber + Fryzjer</option>
+			    </select>
+                <label for="message"></label>
+                <textarea id="message" name="message-client" cols="42" rows="10" required placeholder="Drogi Kliencie! Tutaj jest miejsce, abyś napisał nam, którą usługą jesteś zdecydowany :)"></textarea>
+                <input class="btn send" type="submit" value="Wyślij">
+                <input class="btn reset" type="reset" value="Wyczyść">
+            </form>
+        </section>
+    </main>
+    <footer id="social-media">
+        <p>Grzegorz Pydyn | Find me on:</p>
+        <button class="icon-btn facebook"><i class="fa fa-facebook"></i></button>
+        <button class="icon-btn instagram"><i class="fa fa-instagram"></i></button>
+        <button class="icon-btn twitter"><i class="fa fa-twitter"></i></button>
+        <button class="icon-btn github"><i class="fa fa-github"></i></button>
+        <button class="icon-btn google-plus"><i class="fa fa-google-plus"></i></button>
+        <button class="icon-btn youtube"><i class="fa fa-youtube"></i></button>
+    </footer>
+</body>
+
+</html>
